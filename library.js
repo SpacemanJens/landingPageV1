@@ -517,10 +517,10 @@ class Spejder {
         // Use appropriate frames based on direction
         const currentFrames = this.isMovingLeft ? this.framesRight : this.framesLeft;
 
-        // Draw current frame
+        // Draw current frame.
         const currentFrameIndex = this.currentFrameIndex % currentFrames.length;
         image(currentFrames[currentFrameIndex], adjustedX, adjustedY, animationWidth, animationHeight);
-    }
+     }
 }
 
 // New ImageIndex8Manager class to manage all animations for image index 8
